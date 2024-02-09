@@ -1,0 +1,43 @@
+.poppins-24px-500{
+  
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.poppins-15px-500{
+
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.inter-12px-300{
+   
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.inter-15px-300{
+   
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.inter-7px-300{
+   
+    font-family: 'Inter';
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

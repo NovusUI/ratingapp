@@ -1,0 +1,31 @@
+body, h1, h2, h3,h4,h6, p, ul, ol, li,div,nav{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+
+
+.social-login-btn, .group-btn, .inactive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8397B84A;
+    position: relative;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    margin: 10px 0;
+    width: 80%;
+    height: 53px;
+    color: #fff; /* Set button text color */
+    border: none;
+    
+   
+  }
+
+  .social-login-btn >svg, .group-btn > svg, .inactive >svg{
+    position: absolute;
+    left: 15px;;
+
+  }
