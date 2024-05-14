@@ -1,34 +1,16 @@
 import React from 'react'
-import { useApp } from '../../../ContextAPI/AppContext'
+import ProgressItem from './ProgressItem'
 
-const ratings = [{text:"AWESOME",emoji:"😊"}, {text:"OK",emoji:"🙂"}, {text:"HMMM", emoji:"😑"}, {text:"NO", emoji:"🤢"}, {text:"EWWW", emoji:"🤮"}]
+const ratings = [{text:"AWESOME",emoji:"😊",type:"excellent"}, {text:"OK",emoji:"🙂",type:"good"}, {text:"HMMM", emoji:"😑", type:"ok"}, {text:"NO", emoji:"🤢", type:"bad"}, {text:"EWWW", emoji:"🤮", type:"terrible"}]
 
-const styles = {
-    rating: {
-        width:"230px",
-        height: "70px",
-        marginBottom: "10px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor:"#38393e",
-        borderRadius: "15px",
-        position:"relative",
-        color: "#ffffff",
-        border: "1px solid #AEB5C9",
-    },
 
-    emoji:{
-        position:"absolute",
-        left: "40px"
-    }
-   
-}
-const Ratings = () => {
-  const {mode} = useApp()
+const Ratings = ({saveRating, progress, totalRating}) => {
+
+  
+
   return (
     <div style={{flex:"1"}}>
-      {ratings.map(rating=><div style={( mode ==="light"&& {...styles.rating,backgroundColor:"#b9c3e3",color: "#444444"})||styles.rating}> <span style={styles.emoji}>{rating.emoji}</span> {rating.text}</div>)}
+      {ratings.map(rating=><ProgressItem rating={rating} saveRating={saveRating} progress={progress[rating.type]} totalRating={totalRating} />)}   
     </div>
   )
 }
