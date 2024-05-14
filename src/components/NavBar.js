@@ -15,7 +15,7 @@ const styles = {
         justifyContent: "space-between",
         alignItems: "center",
         color: "#ffffff",
-        borderBottom:"0.5px #ffffff solid",
+    
         padding: "0 30px"
     }
 }

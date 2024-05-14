@@ -7,6 +7,7 @@ import { getPreviousRating, saveNewRating } from '../../firebase/controllers/rat
 import { useAuth } from '../../ContextAPI/AuthContext'
 import { getLocation } from '../../firebase/controllers/locations'
 import Facts from './Facts'
+import { AnimatePresence } from 'framer-motion'
 
 
 const ToiletRating = () => {
@@ -122,7 +123,9 @@ const ToiletRating = () => {
 
   if(showFact){
     return(
+      <AnimatePresence>
       <Facts setShowFact={setShowFact} state={state}/>
+      </AnimatePresence>
     )
   }
 
