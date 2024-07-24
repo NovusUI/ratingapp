@@ -9,14 +9,13 @@ import TypingEffect from './TypingEffect'
 const styles = {
     nav: {
         backgroundColor: "#1D1E21",
-        height:"75px",
         width: "100%",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         color: "#ffffff",
     
-        padding: "0 30px"
+        padding: "30px"
     }
 }
 const NavBar = () => {
@@ -40,7 +39,7 @@ const NavBar = () => {
 
   
   return (
-    <nav style={(mode === "light" && {...styles.nav,backgroundColor: "#e0e6fa",color: "#444444"})||{...styles.nav}}>
+    <nav style={(mode === "light" && {...styles.nav,backgroundColor: "#FFFFFF",color: "#444444"})||{...styles.nav}}>
 
        {displayName &&<TypingEffect text={`Hii, ${displayName}`} speed={100} onClick={()=>navigate("/")}/>}
       <ModeSwitch/>

@@ -32,8 +32,8 @@ const ProgressItem = ({saveRating, rating, progress,totalRating}) => {
     },[progress])
     
   return (
-    <div style={( mode ==="light"&& {...styles.rating,backgroundColor:"#b9c3e3",color: "#444444"})||styles.rating} onClick={()=>saveRating(rating.type)}> 
-        <div style={mode==="light" ? {...styles.progressBar,width:`${(((progress)/totalRating)*100)}% `, backgroundColor:"#4185f4" }: {...styles.progressBar,width:`${(((progress)/totalRating)*100)}% ` }}></div>
+    <div style={( mode ==="light"&& {...styles.rating,backgroundColor:"#d2d4db",color: "#fff"})||styles.rating} onClick={()=>saveRating(rating.type)}> 
+        <div style={mode==="light" ? {...styles.progressBar,width:`${(((progress)/totalRating)*100)}% `, backgroundColor:"#172844" }: {...styles.progressBar,width:`${(((progress)/totalRating)*100)}% ` }}></div>
         <p style={{position:"absolute", left:"20px"}}>{rating.emoji} {rating.text}</p>
       </div>
   )

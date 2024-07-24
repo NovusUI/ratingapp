@@ -53,7 +53,7 @@ console.log("get it");
   return (
     <motion.div 
     className={'container'}  
-    style={(mode==="light" && {color: "#444444",backgroundColor: "#d0dbff"}) || {}}
+    style={(mode==="light" && {color: "#444444",backgroundColor: "#fff"}) || {}}
     >
       <TitleDiv title="Select a toilet to rate"/>
       <MiddleDiv list={locationsData}/>

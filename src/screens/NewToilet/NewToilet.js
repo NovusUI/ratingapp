@@ -52,7 +52,7 @@ const onChange = (e)=>{
   return (
     <motion.div 
     className={`overlay`}  
-    style={(mode==="light" && {color: "#444444",backgroundColor: "#d0dbff"}) || {}}
+    style={(mode==="light" && {color: "#444444",backgroundColor: "#ffffff"}) || {}}
     initial={{opacity:0}}
     animate={{opacity:1}}
     exit={{opacity:0}}

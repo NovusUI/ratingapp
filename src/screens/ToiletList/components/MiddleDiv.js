@@ -13,7 +13,7 @@ const MiddleDiv = ({list}) => {
 
   const onNext = (toiletName,id) =>{
     
-      navigate("/rate-toilet",{state:{toiletName}})
+      navigate("/rate-toilet",{state:{toiletName,id}})
       localStorage.setItem("locationId",id)
   }
   return (

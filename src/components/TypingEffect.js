@@ -17,7 +17,7 @@ const TypingEffect = ({ text, speed, onClick }) => {
     return () => clearInterval(intervalId);
   }, [text, speed]);
 
-  return <div onClick={onClick}>{displayText}</div>;
+  return <div className='roboto-20px-300' onClick={onClick}>{displayText}</div>;
 };
 
 
